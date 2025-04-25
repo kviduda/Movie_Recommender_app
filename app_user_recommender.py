@@ -20,5 +20,5 @@ st.subheader("Recommended Movies:")
 cols = st.columns(5)
 for i, (index, row) in enumerate(user_recs.iterrows()):
     with cols[i % 5]:
-        st.image(row["poster_url"], use_column_width=True)
+        st.image(row["poster_url"], use_container_width=True)
         st.caption(row["title"])
